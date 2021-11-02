@@ -57,7 +57,7 @@
             if (!more) $('#laws-box').empty()
             $.ajax({
                 type: "GET",
-                url: `${api_url}/laws?offset=${offset}`,
+                url: `/api/laws?offset=${offset}`,
                 success: function (res) {
                     total_count = res[0].total_count
                     $('#total_count').text(total_count)
